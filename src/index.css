@@ -1,1 +1,3 @@
-@import 'scss/App.scss'
+@import 'scss/App.scss';
+@import 'scss/variables.scss';
+@import 'scss/header.scss';
