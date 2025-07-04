@@ -2,7 +2,7 @@
 
 .header-container {
   width: 100%;
-  height: 60px;
+  height: 10vh;
   padding: 20px;
   font-size: $text-size;
   transition: all 0.3s ease-in-out;
@@ -23,7 +23,7 @@
     rgb(23, 82, 175) 0%,
     rgb(158, 226, 255) 100%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: transform 0.3s ease;
 }
