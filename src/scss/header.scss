@@ -1,4 +1,5 @@
 @use "./variables.scss" as *;
+@use './animation.scss' as *;
 
 .header-container {
   width: 100%;
@@ -26,12 +27,14 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: transform 0.3s ease;
+  animation: slideInFromLeft 0.5s ease forwards;
 }
 
 .header-links {
   display: flex;
   align-items: center;
   gap: 24px;
+  animation: slideInFromRight 0.5s ease forwards;
 
   .links-menu {
     transition: all 0.1s ease-in-out;
@@ -49,7 +52,7 @@
       cursor: pointer;
 
       &:hover {
-        color: $color-accent-1;
+        color: $color-accent-2;
       }
     }
 

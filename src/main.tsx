@@ -10,20 +10,22 @@ import Travel from './pages/TravelPage.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/Header.tsx'
 import About from './pages/AboutPage.tsx'
+import Footer from './components/Footer.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-    <Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/watch" element={<WatchPage />} />
-      <Route path="/listen" element={<Listen />} />
-      <Route path="/eat" element={<Eat />} />
-      <Route path="/play" element={<Play />} />
-      <Route path="/travel" element={<Travel />} />
-      <Route path="/about" element={<About/>} />
-    </Routes>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/watch" element={<WatchPage />} />
+        <Route path="/listen" element={<Listen />} />
+        <Route path="/eat" element={<Eat />} />
+        <Route path="/play" element={<Play />} />
+        <Route path="/travel" element={<Travel />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   </StrictMode>,
 )

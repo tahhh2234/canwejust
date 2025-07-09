@@ -20,7 +20,7 @@ function Home() {
     }, 2000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [words.length])
 
 
 
@@ -46,16 +46,13 @@ function Home() {
 
       <div className="home-links">
         <div className="button">
-          <FaYoutube />
-          <a href="https://www.youtube.com/@canwejustofficial" target='_blank'>YouTube</a>
+          <a href="https://www.youtube.com/@canwejustofficial" target='_blank' className='link'><FaYoutube />YouTube</a>
         </div>
         <div className="button">
-          <FaTiktok />
-          <a href="https://www.tiktok.com/@canwejust__" target='_blank'>TikTok</a>
+          <a href="https://www.tiktok.com/@canwejust__" target='_blank' className='link'><FaTiktok />TikTok</a>
         </div>
         <div className="button">
-          <SiInstagram />
-          <a href="https://www.instagram.com/canwejust__/" target='_blank'>Instagram</a>
+          <a href="https://www.instagram.com/canwejust__/" target='_blank' className='link'><SiInstagram />Instagram</a>
         </div>
       </div>
     </div>

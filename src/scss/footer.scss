@@ -1,0 +1,33 @@
+@use "./variables.scss" as *;
+@use './animation.scss' as *;
+
+.footer-container {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: $color-1;
+  margin-top: auto;
+  border-top: 1px solid $color-3;
+  animation: slideUp 1s 0.2s ease forwards;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+
+  .footer-link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-accent-1;
+    }
+  }
+}

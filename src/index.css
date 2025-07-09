@@ -1,4 +1,6 @@
 @import 'scss/App.scss';
+@import 'scss/animation.scss';
 @import 'scss/variables.scss';
 @import 'scss/header.scss';
 @import 'scss/home.scss';
+@import 'scss/footer.scss';
